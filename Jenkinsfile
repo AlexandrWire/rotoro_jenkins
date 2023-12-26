@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('dev') {
+    stage('test') {
       steps {
         sh 'go test ./...'
       }
