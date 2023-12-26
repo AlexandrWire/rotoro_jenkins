@@ -3,9 +3,12 @@ pipeline {
   stages {
     stage('dev') {
       steps {
-        echo 'ok'
+        sh 'go test ./...'
       }
     }
 
+  }
+  environment {
+    GO111MODULE = 'on'
   }
 }
